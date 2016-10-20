@@ -7,9 +7,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class MaxTemperature {
 	public static void main(String[] args) throws Exception { 
 		if (args.length != 2) {
-      		System.err.println("Usage: MaxTemperature <input path> <output path>");
-      		System.exit(-1);
-    	}
+			System.err.println("Usage: MaxTemperature <input path> <output path>");
+			System.exit(-1);
+    		}
 		Job job = new Job(); 
 		job.setJarByClass(MaxTemperature.class); 
 		job.setJobName("Max Temperature");
